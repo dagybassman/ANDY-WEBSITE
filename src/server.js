@@ -123,7 +123,13 @@ app.use((err, req, res, next) => {
       : err.message,
   });
 });
-
+app.get("/health", (req, res) => {
+  res.json({
+    success: true,
+    service: "Andy Homecare Connect API",
+    status: "running"
+  });
+});
 // ── Start server ──────────────────────────────────────────────────────────────
 app.listen(PORT, () => {
   console.log(`\n🏠 Andy Homecare Connect API`);

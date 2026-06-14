@@ -30,7 +30,7 @@ npm run dev      # Development (auto-restarts)
 npm start        # Production
 ```
 
-Server runs at: **http://localhost:5000**
+Server runs at: **https://andy-website-i57z.onrender.com/**
 
 ---
 
