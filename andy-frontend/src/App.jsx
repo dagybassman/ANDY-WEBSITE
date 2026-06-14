@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback, useRef } from "react";
 
 // ─── API CONFIG ────────────────────────────────────────────────────────────────
 // Change this to your deployed backend URL in production
-const API_BASE = "https://andy-website-i57z.onrender.com/api";
+const API_BASE = "https://andy-homecare-backend-production.up.railway.app/api";
 
 const api = {
   get: async (path, token = null) => {
@@ -235,7 +235,7 @@ const Spinner = () => <div className="spinner" />;
 const Avatar = ({ name = "", photoUrl = null, size = 62 }) => {
   const initials = name.split(" ").map(w => w[0]).slice(0, 2).join("").toUpperCase();
   if (photoUrl) {
-    return <img src={`https://andy-website-i57z.onrender.com${photoUrl}`} alt={name} className="card-photo" style={{ width: size, height: size }} />;
+    return <img src={`https://andy-homecare-backend-production.up.railway.app${photoUrl}`} alt={name} className="card-photo" style={{ width: size, height: size }} />;
   }
   return (
     <div className="card-avatar" style={{ width: size, height: size, fontSize: size * 0.36 }}>{initials}</div>

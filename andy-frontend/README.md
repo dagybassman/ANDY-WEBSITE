@@ -20,7 +20,7 @@ npm run build     # produces dist/ folder ready for deployment
 
 Edit line 4 of `src/App.jsx`:
 ```js
-const API_BASE = "https://andy-website-i57z.onrender.com";
+const API_BASE = "https://YOUR-BACKEND-URL.onrender.com/api";
 ```
 Then rebuild and redeploy.
 
